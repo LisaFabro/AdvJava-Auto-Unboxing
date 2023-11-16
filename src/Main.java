@@ -1,4 +1,4 @@
-public class Main implements Metodi{
+public class Main{
     //Scrivere una funzione che accetti in input 2 int e ne stampi la somma
     //Scrivere una funzione che accetti in input 1 char lo stampi
     //Scrivere una funzione che accetti in input 2 Integer e ne stampi la somma
@@ -16,9 +16,23 @@ public class Main implements Metodi{
         int num3 = num2;
         double doub3 = doub2;
         char char3 = char2;
-        Metodi.sum(num1, num3);
-        Metodi.stamp(char1);
-        Metodi.sumObj(num2, num1);
-        Metodi.stampObj(char3);
+        sum(num1, num3);
+        stamp(char1);
+        sumObj(num2, num1);
+        stampObj(char3);
+    }
+    static void sum(int num1, int num2){
+        int result = num1+num2;
+        System.out.println(result);
+    }
+    static void stamp(char char1){
+        System.out.println(char1);
+    }
+    static void sumObj(Integer num1, Integer num2){
+        Integer result = num1+num2;
+        System.out.println(result);
+    }
+    static void stampObj(Character char1){
+        System.out.println(char1);
     }
 }
